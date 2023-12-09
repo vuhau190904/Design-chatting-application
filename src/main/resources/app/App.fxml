@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="profile" prefHeight="500.0" prefWidth="100.0" style="-fx-background-color: rgb(28, 31, 39);">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/avatar.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" layoutX="19.0" layoutY="83.0" prefHeight="19.0" prefWidth="66.0" text="Vu Hau" textAlignment="JUSTIFY" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="22.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/chat-bubble.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="24.0" layoutY="429.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/setting.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="22.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/box.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="22.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/add-group.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="100.0" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: rgb(25, 27, 33);">
+         <children>
+            <Label layoutX="18.0" layoutY="14.0" prefHeight="25.0" prefWidth="76.0" text="Chat" textFill="#fcf8f8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox layoutX="17.0" layoutY="45.0" style="-fx-background-color: rgb(33, 36, 44);">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/search.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="26.0" prefWidth="189.0" promptText="Search" style="-fx-background-color: transparent;" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Pane layoutX="17.0" layoutY="91.0" prefHeight="89.0" prefWidth="213.0" style="-fx-background-color: rgb(33, 36, 44);">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="9.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="16.0" prefHeight="19.0" prefWidth="130.0" text="Crush" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="78.0" layoutY="42.0" prefHeight="26.0" prefWidth="114.0" text="Tớ chờ ngày này lâu lắm rồi," textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="17.0" layoutY="192.0" prefHeight="89.0" prefWidth="213.0" style="-fx-background-color: rgb(25, 27, 33);">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="9.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="16.0" prefHeight="19.0" prefWidth="130.0" text="Bạn thân" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="78.0" layoutY="42.0" prefHeight="26.0" prefWidth="114.0" text="Bạn đi ăn không?" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#ff1f1f" layoutX="202.0" layoutY="55.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="198.0" layoutY="47.0" prefHeight="16.0" prefWidth="16.0" text="2" textFill="#fcf8f8">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="17.0" layoutY="294.0" prefHeight="89.0" prefWidth="213.0" style="-fx-background-color: rgb(25, 27, 33);">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="9.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="16.0" prefHeight="19.0" prefWidth="130.0" text="Mẹ" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="78.0" layoutY="42.0" prefHeight="26.0" prefWidth="86.0" text="You: Vâng mẹ" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="17.0" layoutY="397.0" prefHeight="89.0" prefWidth="213.0" style="-fx-background-color: rgb(25, 27, 33);">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="9.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="16.0" prefHeight="19.0" prefWidth="130.0" text="Bố" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="78.0" layoutY="42.0" prefHeight="26.0" prefWidth="121.0" text="Con đang đâu?" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#ff1f1f" layoutX="202.0" layoutY="55.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="199.0" layoutY="47.0" prefHeight="16.0" prefWidth="16.0" text="1" textFill="#fcf8f8">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="350.5" prefHeight="500.0" prefWidth="429.5" style="-fx-background-color: rgb(25, 27, 33);">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="110.0" layoutY="21.0" prefHeight="42.0" prefWidth="130.0" text="Crush" textFill="#fcf8f8">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="385.0" endY="-9.0" layoutX="38.0" layoutY="89.0" startX="-30.0" startY="-9.0" stroke="#686868" />
+            <Label layoutX="206.0" layoutY="93.0" prefHeight="17.0" prefWidth="39.0" text="7:00" textFill="#b5b1b1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="203.0" layoutY="210.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Thật ra tớ thích cậu lâu lắm rồi, &#10;nhưng giờ mới dám nói&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="230.0" layoutY="263.0" prefHeight="30.0" prefWidth="189.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Cậu làm người yêu tớ nhé ?&#10;&#10;&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="359.0" layoutY="124.0" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Alo alo&#10;&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="234.0" layoutY="157.0" prefHeight="50.0" prefWidth="189.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Cậu có rảnh không, tớ có&#10;chuyện muốn nói với cậu&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="320.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Cậu nói thật không ?&#10;&#10;&#10;&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="353.0" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Ok, tớ đồng ý&#10;&#10;&#10;&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="386.0" prefHeight="50.0" prefWidth="213.0" style="-fx-background-color: rgb(98, 207, 147); -fx-background-radius: 100;" text="Tớ chờ ngày này lâu lắm rồi, tớ&#10;cũng thích cậu từ rất lâu rồi&#10;" textFill="#fcf8f8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="51.0" layoutY="454.0" prefHeight="30.0" prefWidth="334.0" promptText="Type Message" style="-fx-background-color: rgb(33, 36, 44); -fx-background-radius: 30;" />
+            <ImageView fitHeight="42.0" fitWidth="30.0" layoutX="14.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/add.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="25.0" layoutX="391.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/send.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="19.0" fitWidth="24.0" layoutX="356.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/emotion.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
